@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="130dp"
+            android:text="REGISTER"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilRegisterName"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvRegister"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="ENTER NAME">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etRegisterName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:maxLength="20"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:layout_constraintTop_toBottomOf="@+id/tilRegisterName"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="ENTER PASSWORD">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etRegisterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberPassword"
+                android:maxLength="20"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilRegisterConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:layout_constraintTop_toBottomOf="@+id/tilRegisterPassword"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="CONFIRM PASSWORD">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etRegisterConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="numberPassword"
+                android:maxLength="20"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tilRegisterConfirmPassword"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:text="REGISTER"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
